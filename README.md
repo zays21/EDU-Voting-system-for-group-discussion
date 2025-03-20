@@ -22,5 +22,10 @@ The vision of this project is to create a secure and trustless voting mechanism 
 - **Transparency**: All votes and results are stored on the blockchain, publicly verifiable.
 - **Proposal Management**: Supports multiple proposals with vote counting and winner determination.
 - **Event Logging**: Emits events for key actions (e.g., vote casting, voting start/end) for real-time tracking.
+- 
+  ##contract address:
+   0x3E88C8c697cd076e287e9DA8eAa7F731E413C1a6
+
+  ![image](https://github.com/user-attachments/assets/2b1fa434-f38b-49ca-b412-a056e45802b3)
 
 - 
