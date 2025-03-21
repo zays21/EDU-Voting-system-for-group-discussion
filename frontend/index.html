@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Discussion Voting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Group Discussion Voting Hub</h1>
+            <p>Cast your vote and see real-time results!</p>
+        </header>
 
+        <div class="discussion-card">
+            <h2>Current Topic</h2>
+            <p id="topic">Should remote work be the future?</p>
+            <div class="vote-buttons">
+                <button id="voteYes" onclick="vote('yes')">👍 Yes</button>
+                <button id="voteNo" onclick="vote('no')">👎 No</button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>Live Results</h2>
+            <div class="progress-bar">
+                <div class="yes-bar" id="yesBar"></div>
+                <span id="yesCount">Yes: 0</span>
+            </div>
+            <div class="progress-bar">
+                <div class="no-bar" id="noBar"></div>
+                <span id="noCount">No: 0</span>
+            </div>
+        </div>
+
+        <div class="status" id="status">Connected to blockchain: Loading...</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

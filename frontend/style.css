@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a4a);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #00d4ff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #ffcc00;
+}
+
+.discussion-card {
+    background: #2e2e4f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#topic {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin: 10px 0;
+}
+
+.vote-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #ffcc00;
+    color: #1e1e2f;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+}
+
+.results-section {
+    padding: 20px;
+}
+
+.progress-bar {
+    margin: 15px 0;
+    position: relative;
+    height: 30px;
+    background: #3e3e5f;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.yes-bar, .no-bar {
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.yes-bar {
+    background: #00d4ff;
+    width: 0%;
+}
+
+.no-bar {
+    background: #ff6666;
+    width: 0%;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #fff;
+}
+
+.status {
+    text-align: center;
+    font-size: 0.9em;
+    color: #00ff99;
+    margin-top: 20px;
+}
